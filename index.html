@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNest | Upgrade Your Tech Life</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">TECH<span>NEST.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Shop</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-button" id="cart-button">
+        🛒 <span>Cart</span>
+        <b id="cart-count">0</b>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-label">THE FUTURE OF TECHNOLOGY</span>
+        <h1>Upgrade Your<br><span>Tech Lifestyle.</span></h1>
+        <p>
+          Discover premium gadgets and smart accessories
+          designed to make every moment better.
+        </p>
+
+        <a href="#products" class="primary-button">
+          Explore Collection →
+        </a>
+
+        <div class="hero-stats">
+          <div>
+            <strong>50+</strong>
+            <small>Products</small>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <small>Quality Focus</small>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <small>Support</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=900"
+          alt="Premium wireless headphones"
+        >
+        <div class="floating-card">
+          <span>FEATURED PRODUCT</span>
+          <strong>Wireless Headphones</strong>
+          <small>Premium sound experience</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories" id="categories">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">BROWSE BY TYPE</span>
+          <h2>Explore Categories</h2>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        <a href="#products" class="category-card">
+          <span>🎧</span>
+          <h3>Audio</h3>
+          <p>Sound your way</p>
+        </a>
+
+        <a href="#products" class="category-card">
+          <span>⌨️</span>
+          <h3>Keyboards</h3>
+          <p>Type in style</p>
+        </a>
+
+        <a href="#products" class="category-card">
+          <span>🖱️</span>
+          <h3>Accessories</h3>
+          <p>Everyday essentials</p>
+        </a>
+
+        <a href="#products" class="category-card">
+          <span>🎮</span>
+          <h3>Gaming</h3>
+          <p>Level up your game</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">OUR COLLECTION</span>
+          <h2>Featured Products</h2>
+          <p>Find your next favourite tech accessory.</p>
+        </div>
+      </div>
+
+      <div class="product-toolbar">
+        <input
+          type="search"
+          id="product-search"
+          placeholder="Search tech products..."
+        >
+        <span>Explore our collection</span>
+      </div>
+
+      <div id="product-container" class="product-grid">
+        <!-- JavaScript renders products here -->
+      </div>
+    </section>
+
+    <!-- SHOPPING CART -->
+    <section class="cart-section" id="cart">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">YOUR SELECTION</span>
+          <h2>Shopping Cart</h2>
+        </div>
+      </div>
+
+      <div id="cart-items"></div>
+
+      <div class="cart-summary">
+        <h3>Total Amount</h3>
+        <strong id="cart-total">₹0</strong>
+        <button id="checkout-button">Proceed to Checkout →</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- CHECKOUT MODAL -->
+  <div id="checkout-modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="close-modal" class="close-button">×</button>
+      <span class="section-label">ORDER PREVIEW</span>
+      <h2>Almost yours!</h2>
+      <p class="modal-subtitle">Review your selected products.</p>
+
+      <div id="checkout-details"></div>
+
+      <div class="modal-total">
+        <span>Total Amount</span>
+        <strong id="checkout-total"></strong>
+      </div>
+
+      <p class="demo-note">
+        This is a demo checkout. No payment details are required.
+      </p>
+
+      <button id="confirm-button">Close Preview</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#home" class="logo">TECH<span>NEST.</span></a>
+    <p>Technology that fits your lifestyle.</p>
+    <small>© 2026 TechNest. Built with passion.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
